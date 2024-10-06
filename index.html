@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FOX RACING</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="product.html">PRODUCT</a>
+                <a href="gallery.html">GALLERY</a>
+            </nav>
+        </header>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/swiper/1.jpg" alt="Image">
+                    <div class="slide-text">
+                        <h4>FOX</h4>
+                        <img src="img/logo/logo.png" alt="" class="logo">
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="img/swiper/2.jpg" alt="Image">
+                    <div class="slide-text">
+                        <h4>MADE FOR YOUR RIDE FOX</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/swiper/3.jpg" alt="Image">
+                    <div class="slide-text">
+                        <h4>MADE FOR YOUR RIDE FOX</h4>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Добавляем кнопки навигации -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Добавляем пагинацию -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <main>
+            <section class="cart_info">
+                <div data-aos="fade-right" class="cart">
+                    <div class="cart_text">
+                        <h3>REAR SHOCK</h3>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="cart">
+                    <div class="cart_text">
+                        <h3>FORK</h3>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="cart">
+                    <div class="cart_text">
+                        <h3>CLOTHES</h3>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+            </section>
+            <div class="new_products_background">
+                <h3 data-aos="fade-up-right" class="new_products_text">NEW PRODUCTS</h3>
+                <section class="new_products">
+                    <div data-aos="fade-up" class="new_products_cart"></div>
+                    <div data-aos="fade-up" class="new_products_cart"></div>
+                    <div data-aos="fade-up" class="new_products_cart"></div>
+                </section>
+            </div>
+        </main>
+
+        <footer style="background-color: black; color: white; text-align: center; padding: 20px 0; position: relative;">
+            © 2024 FOX RACING
+        </footer>
+        
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: false, // Убираем кликабельность
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: 'slide', // Можно менять на 'fade', 'cube', 'flip' и др.
+            speed: 800, // Делаем анимацию более плавной
+            coverflowEffect: {
+                rotate: 50,
+                slideShadows: false,
+            },
+            simulateTouch: true, // Чтобы слайдер ощущался как "тяжелый"
+            resistance: true,
+            resistanceRatio: 0.75 // Чем меньше значение, тем "тяжелее" перелистывание
+        });
+        
+    </script>
+</body>
+</html>
